@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Inter;
+    src: url('../font/InterFont.ttf');
+}
+
+@font-face{
+    font-family: Signature;
+    src: url('../font/GreatVibes.ttf');
+}
+
+@font-face {
+    font-family: Blenda;
+    src: url('../font/BlendaScript.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: Inter;
+}
+
+.signature-font{
+    font-family: Signature;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: Inter;
+}
+
+.navbar-brand{
+    font-size: 2rem !important;
+}
+
+.nav-item a, .navbar-socials {
+    color: black;
+    margin-right: 1rem;
+}
+
+.header-container{
+    background-image: linear-gradient(to right bottom, rgba(30, 83, 49, 0.6), rgba(76, 154, 42, 0.6)), url("../img/image-background/image-background.jpg");
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.header-title, .header-text{
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    padding-left: 2rem;
+}
+
+.header-title h1{
+    font-size: 6rem;
+}
+
+.header-text p{
+    font-size: 1.2rem;
+}
+
+.title-presentation{
+    font-family: Blenda;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.image-presentation{
+    width: auto;
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.page-indicator{
+    padding: 1rem;
+}
+
+.page-title{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.caption-title{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-links-text{
+    padding-left: 1rem;
+}
+
+.btn-contact {
+    background-color: white;
+    border: 2px solid rgba(30, 83, 49);
+    border-radius: 30px;
+    color:black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-card {
+    background-color: white;
+    border: 2px solid rgba(30, 83, 49);
+    border-radius: 30px;
+    color:black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-title{
+    padding-bottom: 1.5rem;
+}
+
+.btn-card:hover{
+    color:rgba(76, 154, 42);
+}
+
+
+.background-gradient{
+    background: linear-gradient(white, #74E39A);
+}
+
+.background-offres{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    background-color: #3BD16F;
+}
+
+.background-contact{
+    background-color: #01B636;
+    padding-bottom: 3rem;
+}
+
+.image-slider{
+    height: auto;
+    width: auto;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+.indent{
+    text-indent: 2rem;
+}
