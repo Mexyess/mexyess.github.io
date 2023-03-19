@@ -42,6 +42,8 @@
         $(function(){
             $("#header").load("header.html"); 
             $("#footer").load("footer.html"); 
+            $('#tarifMobile').load("texts/tarification.html");
+            $('#tarifDesk').load("texts/tarification.html");
         });
     </script>
     <!-- Style Includes -->
@@ -51,32 +53,74 @@
     <!-- Main page -->
     <div id="header"></div>
 
-    <p class="page-indicator">Offre / Marche consiente</p>
-
-    <div class="container-fluid">
-        <h2 class="page-title bold-text">Je vous invite à venir découvrir la marche pleine conscience</h2>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <h3 class="bold-text">La marche consciente c’est quoi ?</h3>
-                <h5 class="indent">Une méditation dans l’action, <span class="italic-text">comment ?</span></h5>
-                <p>En  silence être pleinement dans l’instant présent en mouvement, avancer dans une présence à soi, à chaque pas, sa respiration, au mouvement de son corps, et l’esprit ouvert sur l’espace en soi et de son environnement. Se diriger dans une autre dimension celle de la profondeur de notre être qui se dévoile pas à pas.</p>
-                <h3 class="bold-text">pourquoi pratiquer la marche pleine conscience? </h3>
-                <p>Des bienfaits immédiats :</p>
-                <ul>
-                    <li>En stoppant les ruminations, les parasitages, développer la  relation à soi et aux autres.</li>
-                    <li>Synchroniser ses rythmes entre corps et mental.</li>
-                    <li>En focalisant son attention, la concentration facilite la réduction du vagabondage des pensées, et le lâcher prise.</li>
-                    <li>Sortir de l’isolement, lutter contre l’angoisse, l’anxiété…</li>
-                    <li>Energie, vitalité, en se libérant des toxines et des charges mentales.</li>
-                </ul>
+    <!-- Mobile version -->
+    <div class="d-lg-none">
+        <div class="p-5 bg-image phone-background-marcheconsiente">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="phone-header-container-centered">
+                    <h1 class="phone-header-title signature-font">Offre marche consiente</h1>
+                </div>
             </div>
-            <div class="col-lg-5">
-                <img src="assets/img/image-offers/image-marche-consiente-2.jpg" class="image-presentation" alt="">
+        </div>
+
+        <div class="container py-3">
+            <h2 class="bold-text">Je vous invite à venir découvrir la marche pleine conscience</h2>
+            <h3 class="bold-text">La marche consciente c’est quoi ?</h3>
+            <h5 class="indent">Une méditation dans l’action, <span class="italic-text">comment ?</span></h5>
+            <p>En  silence être pleinement dans l’instant présent en mouvement, avancer dans une présence à soi, à chaque pas, sa respiration, au mouvement de son corps, et l’esprit ouvert sur l’espace en soi et de son environnement. Se diriger dans une autre dimension celle de la profondeur de notre être qui se dévoile pas à pas.</p>
+            <h3 class="bold-text">pourquoi pratiquer la marche pleine conscience? </h3>
+            <p>Des bienfaits immédiats :</p>
+            <ul>
+                <li>En stoppant les ruminations, les parasitages, développer la  relation à soi et aux autres.</li>
+                <li>Synchroniser ses rythmes entre corps et mental.</li>
+                <li>En focalisant son attention, la concentration facilite la réduction du vagabondage des pensées, et le lâcher prise.</li>
+                <li>Sortir de l’isolement, lutter contre l’angoisse, l’anxiété…</li>
+                <li>Energie, vitalité, en se libérant des toxines et des charges mentales.</li>
+            </ul>
+            <div id="tarifMobile"></div>
+        </div>
+
+    </div>
+    <!-- Mobile version -->
+
+    <!-- Desktop version -->
+    <div class="d-none d-lg-block">
+        <p class="page-indicator">Offre / Marche consiente</p>
+
+        <div class="container-fluid">
+            <h2 class="page-title bold-text">Je vous invite à venir découvrir la marche pleine conscience</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h3 class="bold-text">La marche consciente c’est quoi ?</h3>
+                    <h5 class="indent">Une méditation dans l’action, <span class="italic-text">comment ?</span></h5>
+                    <p>En  silence être pleinement dans l’instant présent en mouvement, avancer dans une présence à soi, à chaque pas, sa respiration, au mouvement de son corps, et l’esprit ouvert sur l’espace en soi et de son environnement. Se diriger dans une autre dimension celle de la profondeur de notre être qui se dévoile pas à pas.</p>
+                    <h3 class="bold-text">pourquoi pratiquer la marche pleine conscience? </h3>
+                    <p>Des bienfaits immédiats :</p>
+                    <ul>
+                        <li>En stoppant les ruminations, les parasitages, développer la  relation à soi et aux autres.</li>
+                        <li>Synchroniser ses rythmes entre corps et mental.</li>
+                        <li>En focalisant son attention, la concentration facilite la réduction du vagabondage des pensées, et le lâcher prise.</li>
+                        <li>Sortir de l’isolement, lutter contre l’angoisse, l’anxiété…</li>
+                        <li>Energie, vitalité, en se libérant des toxines et des charges mentales.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <img src="assets/img/image-offers/image-marche-consiente-2.jpg" class="image-presentation" alt="">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-7">
+                    <div id="tarifDesk"></div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- Desktop version -->
+    
 
     <h1 class="title-presentation">Quelques images</h1>
     <div class="images-slider">
@@ -100,6 +144,9 @@
         </div>
         <div>
             <img class="image-slider" src="assets/img/image-slider/image-slider-7.jpg" alt="">
+        </div>
+        <div class="d-lg-none">
+            <img class="image-slider" src="assets/img/image-slider/image-slider-8.jpg" alt="">
         </div>
     </div>
     

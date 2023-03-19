@@ -7,11 +7,6 @@
 
     <!-- Style Includes -->
     
-    <!-- Stylesheet -->
-    <link 
-        href="assets/css/style.css"
-        rel="stylesheet" 
-    />
     <!-- Font Awesome -->
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -28,6 +23,11 @@
         rel="stylesheet"
     />
     
+    <!-- Stylesheet -->
+    <link 
+        href="assets/css/style.css"
+        rel="stylesheet" 
+    />
 
     <script
         type="text/javascript"
@@ -38,7 +38,9 @@
     <script>
         $(function(){
             $("#header").load("header.html"); 
-            $("#footer").load("footer.html"); 
+            $("#footer").load("footer.html");
+            $("#text-onchologie-desktop").load("texts/text-onchologie.html");
+            $("#text-onchologie-mobile").load("texts/text-onchologie.html");    
         });
     </script>
     <!-- Style Includes -->
@@ -48,70 +50,59 @@
     <!-- Main page -->
     <div id="header"></div>
 
-    <div class="container-fluid pt-3">
-        <h1 class="page-title"><span class="bold-text">Protocole accompagnement sophrologique</h1>
-        <h3 class="caption-title bold-text">En 10 séances durant traitement oncologique</h3>
-    </div>
 
 
-    <div class="container">
-        <p>
-            <span class="bold-text">Objectifs :</span> réduire l’anxiété, désensibiliser les stimuli anxiogènes, 
-            mobiliser  la capacité à renforcer le métabolisme, 
-            travail de prise de conscience de stratégies pour soulager certains symptômes….
-        </p>
-        <div class="row">
-            <div class="col-lg-6">
-                <p class="italic-text bold-text">I. Accueil de l’annonce du diagnostic à la mise en place du protocole médical de soins</p>
-                <h5><span class="bold-text">Séance 1 :</span> gestion de la peur, l’anxiété à l’annonce du diagnostic</h5>
-                <p>Exercices corporels de respiration, de relaxation et initiation aux visualisations et à la méditation.</p>
-                
-                <h5><span class="bold-text">Séance 2 :</span> stimuler une attitude active et combative</h5>
-                <p>Exercices de respiration, détente musculaire, invitation  par visualisation active du système de défense immunitaire par votre imaginaire.</p>
-
-                <h5><span class="bold-text">Séance 3 :</span> adhésion coopération avec l’équipe médicale</h5>
-                <p>Acquisition de techniques de distanciation des facteurs anxiogènes par une relaxation profonde pour atténuer la douleur.</p>
-   
-                <h5><span class="bold-text">Séance 4 :</span> ancrage, éveil pour actionner la rémission</h5>
-                <p>Respiration, enracinement, visualisation pour stimuler les ressources intérieures d’énergie et de force.</p>
-   
-                <h5><span class="bold-text">Séance 5 et 6 :</span> selon vos besoins</h5>
-                <p>comme la méditation, pourront vous être proposés afin de compléter le soutien de l’observance thérapeutique.</p>
-   
-            </div>
-            <div class="col-lg-6 d-flex align-items-center">
-                <img src="assets/img/image-sections/image-onchologie-1.jpg" class="image-presentation" alt="">
+    <!-- Mobile version -->
+    <div class="d-lg-none">
+        <!-- Mobile header -->
+        <div class="p-5 bg-image phone-background-onchologie">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="phone-header-container">
+                    <h1 class="phone-header-title signature-font">Protocole accompagnement sophrologique</h1>
+                    <h5 class="phone-header-text">En 10 séances durant traitement oncologique</h5>
+                </div>
             </div>
         </div>
-    </div>
+        <!-- Mobile header -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <p class="italic-text bold-text">
-                    II. Préparation pour la chirurgie
-                </p>
-                <p>Enjeux de  réassurance avant l’intervention chirurgicale, appréhender les enjeux d’une nouvelle victoire, et des changements à la fin de la 2e étape de traitement.</p>
-                <h5><span class="bold-text">Séance 7 :</span> préopératoire</h5>
-                <p>Technique de relaxation, de respiration, échanges autour de la préparation mentale, psychologique aux différentes moments de l’intervention chirurgicale</p>
-                
-                <h5><span class="bold-text">Séance 8 :</span> les changements la suite des soins</h5>
-                <p>Acceptation progressive de la réussite de l’intervention.   Techniques de futurisation pour anticiper et pouvoir se projeter sur l’après, sur la suite du traitement.</p>
-            </div>
-            <div class="col-lg-6">
-                <p class="italic-text bold-text">
-                    III. Pendant le traitement de radiothérapie
-                </p>
-                
-                <h5><span class="bold-text">Séance 9 :</span> gérer le vécu éventuel des effets secondaires de la radiothérapie</h5>
-                <p>Relaxation corporelle, apprentissage de technique de désensibilisation par substitution sensorielle, contre les risques éventuels de brûlures.</p>
-   
-                <h5><span class="bold-text">Séance 10 :</span> clôture de la fin du parcours de soins hospitaliers</h5>
-                <p>Préparation mentale et psychologique pour reprendre en main le cours de sa vie personnelle et professionnelle.</p>
-   
-            </div>
+        <div class="container py-3">
+            <p>
+                <span class="bold-text">Objectifs :</span> réduire l’anxiété, désensibiliser les stimuli anxiogènes, 
+                mobiliser  la capacité à renforcer le métabolisme, 
+                travail de prise de conscience de stratégies pour soulager certains symptômes….
+            </p>
+
+            <div id="text-onchologie-mobile" class="indent-paragraphs"></div>
+
+
+        </div>
+
+    </div>
+    <!-- Mobile version -->
+
+    <!-- Desktop version -->
+    <div class="d-none d-lg-block">
+        <p class="page-indicator">Offre / Accompagnement en oncologie</p>
+        <div class="container-fluid pt-3">
+            <h1 class="page-title"><span class="bold-text">Protocole accompagnement sophrologique</h1>
+            <h3 class="caption-title bold-text">En 10 séances durant traitement oncologique</h3>
+        </div>
+
+        <div class="container">
+            <p>
+                <span class="bold-text">Objectifs :</span> réduire l’anxiété, désensibiliser les stimuli anxiogènes, 
+                mobiliser  la capacité à renforcer le métabolisme, 
+                travail de prise de conscience de stratégies pour soulager certains symptômes….
+            </p>
+
+            <img src="assets/img/image-offers/image-onchologie-1.jpg" class="image-presentation image-small" alt="">
+        
+            <div id="text-onchologie-desktop" class="indent-paragraphs"></div>
+
         </div>
     </div>
+    <!-- Desktop version -->
+
 
     <div id="footer"></div>
     <!-- Main page -->

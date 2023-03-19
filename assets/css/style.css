@@ -30,6 +30,11 @@ body{
     font-family: Inter;
 }
 
+.background-footer{
+    background-color: #e3e3e3;
+    box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
 .navbar-brand{
     font-size: 2rem !important;
 }
@@ -98,34 +103,8 @@ body{
     padding-left: 1rem;
 }
 
-.btn-contact {
-    background-color: white;
-    border: 2px solid rgba(30, 83, 49);
-    border-radius: 30px;
-    color:black;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.btn-card {
-    background-color: white;
-    border: 2px solid rgba(30, 83, 49);
-    border-radius: 30px;
-    color:black;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
 .card-title{
     padding-bottom: 1.5rem;
-}
-
-.btn-card:hover{
-    color:rgba(76, 154, 42);
 }
 
 
@@ -138,7 +117,6 @@ body{
     padding-right: 3rem;
     padding-bottom: 2rem;
     padding-top: 1rem;
-    background-color: #3BD16F;
 }
 
 .background-contact{
@@ -161,4 +139,145 @@ body{
 
 .indent{
     text-indent: 2rem;
+}
+
+.indent-paragraphs p {
+    text-indent: 2rem;
+}
+.image-small{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+.box{
+    background-color: #74E39A;
+    padding: 2rem;
+    border-radius: 0px 20px 20px;
+    margin-bottom: 1rem;
+}
+
+.list{
+    list-style: upper-roman inside;
+}
+
+.list-item {
+    display: list-item;
+}
+
+.list-content{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.phone-background-onchologie{
+    background-image: url("../img/image-sections/image-onchologie-1.jpg");
+    height: 100vh;
+}
+
+.phone-header-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.phone-header-title, .phone-header-text {
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    padding-left: 2rem;
+}
+
+.phone-header-title{
+    font-size: 4rem;
+}
+
+.phone-header-text{
+    font-size: 1rem;
+}
+
+.phone-background-lacherprise{
+    background-image: url('../img/image-offers/image-lacher-prise.jpg');
+    height: 100vh;
+}
+
+.phone-header-container-centered {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-background-marcheconsiente{
+    background-image: url('../img/image-offers/image-marche-consiente-1.jpg');
+    height: 100vh;
+}
+
+.phone-background-gestionemotions{
+    background-image: url('../img/image-offers/image-gestion-emotion.jpg');
+    height: 100vh;
+}
+
+.contact-container {
+    background-image: linear-gradient(to right bottom, rgba(30, 83, 49, 0.6), rgba(76, 154, 42, 0.6)), url("../img/image-background/image-background.jpg");
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-header{
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.contact-title{
+    font-size: 5rem;
+}
+
+.contact-caption{
+    font-size: 1rem;
+}
+
+
+.btn-contact{
+    margin: 2rem;
+}
+
+.nav-link:hover, .navbar-socials:hover{
+    color: #01B636;
+}
+
+.form-outline{
+    border-color: white;
+}
+
+.form-outline:focus{
+    border-color: #01B636;
+}
+
+.form-label{
+    color: white;
+}
+
+.form-control{
+    color: white;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 982px) {
+    .contact-container{
+        height: auto;
+        display: block;
+    }
 }
