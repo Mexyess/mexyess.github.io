@@ -152,7 +152,9 @@ body{
 
 .box{
     background-color: #74E39A;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #4ea06b;
     border-radius: 0px 20px 20px;
     margin-bottom: 1rem;
 }
@@ -258,9 +260,6 @@ body{
     border-color: white;
 }
 
-.form-outline:focus{
-    border-color: #01B636;
-}
 
 .form-label{
     color: white;
@@ -274,10 +273,74 @@ body{
     text-align: justify;
 }
 
+.btn-card{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
 
-@media only screen and (max-width: 982px) {
-    .contact-container{
+.form-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.width-responsive{
+    width: 50%;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading {
+    border-top: .125rem solid #01B636;
+    border-bottom: .125rem solid #01B636;
+    border-left: .125rem solid #01B636;
+  	box-shadow:-1px 0px 0px 0px #01B636, 0px 1px 0px 0px #01B636, 0px -1px 0px 0px #01B636;
+}
+ .form-outline .form-control:focus~.form-notch .form-notch-middle {
+    border-bottom: .125rem solid;
+    border-color: #01B636;
+   	border-top:none;
+    box-shadow: 0 1px 0 0 #01B636;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    border-color: currentcolor currentcolor currentcolor #01B636;
+    border-bottom: .125rem solid #01B636;
+    border-right: .125rem solid #01B636;
+    border-top: .125rem solid #01B636;
+  	box-shadow: 1px 0 0 0 #01B636, 0 -1px 0 0 #01B636, 0 1px 0 0 #01B636;
+}
+
+.form-outline .form-control:focus~.form-label {
+    color: #01B636;
+}		
+
+.form-outline .form-control.active~.form-notch .form-notch-middle, .form-outline .form-control:focus~.form-notch .form-notch-middle {
+  border-top: 1px;
+}
+
+.accordion-button {
+    color: #01B636; 
+}
+
+.accordion-button:not(.collapsed) {
+    color: #01B636;
+}
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2301B636'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+@media only screen and (max-width: 1300px) {
+    .contact-container {
         height: auto;
-        display: block;
+    }
+}
+@media only screen and (max-width: 982px) {
+    .width-responsive{
+        width: 100%;
     }
 }

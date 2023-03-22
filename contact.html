@@ -55,26 +55,29 @@
         </div>
 
         <div class="container">
-            <form class="text-center" action="" method="post">
-                <div class="row">
-                    <div class="col-lg-6">
 
-                        <div class="form-outline mb-4">
-                            <input type="email" class="form-control" id="form1Example1" />
-                            <label class="form-label text-white" for="form1Example1">E-mail</label>
-                        </div>
+            <form class="text-center form-align" action="" method="post">
+                <div class="form-outline mb-4 width-responsive">
+                    <input type="text" class="form-control text-white" id="ContactNom" />
+                    <label class="form-label text-white" for="ContactNom">Nom</label>
+                </div>
 
+                <div class="form-outline mb-4 width-responsive">
+                    <input type="text" class="form-control text-white" id="ContactPrenom" />
+                    <label class="form-label text-white" for="ContactPrenom">Prénom</label>
+                </div>
 
-                        <input type="text" id="ContactNom" class="form-control mb-4" placeholder="Nom">
-                        <input type="text" id="ContactPrenom" class="form-control mb-4" placeholder="Prénom">
-                        <input type="email" id="ContactEmail" class="form-control mb-4" placeholder="E-mail">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <textarea class="form-control" id="ContactMessage" rows="10" placeholder="Message"></textarea>
-                        </div>
+                <div class="form-outline mb-4 width-responsive">
+                    <input type="email" class="form-control text-white" id="ContactEmail" />
+                    <label class="form-label text-white" for="ContactEmail">E-mail</label>
+                </div>
+
+                <div class="form-group form-outline mb-4 width-responsive">
+                        <textarea class="form-control text-white" id="ContactMessage" rows="5"></textarea>
+                        <label class="form-label text-white" for="ContactMessage">Message</label>
                     </div>
                 </div>
+                
                 <button class="btn btn-success btn-rounded btn-contact" href="contact.html" type="submit">Envoyer</button>
             </form>
         </div>
