@@ -51,85 +51,65 @@
 
         <div class="contact-header">
             <h1 class="signature-font contact-title">Contactez-moi</h1>
-            <p class="contact-caption">Laissez moi un message si vous avez besoin d'aide</p>
+            <p id="message-status" class="contact-caption">Laissez moi un message si vous avez besoin d'aide</p>
         </div>
 
         <div class="container">
 
-            <form class="text-center form-align" action="" method="post">
+            <form id="form-contact" class="text-center form-align" action="#">
                 <div class="form-outline mb-4 width-responsive">
-                    <input type="text" class="form-control text-white" id="ContactNom" />
+                    <input type="text" name="nom" class="form-control text-white">
                     <label class="form-label text-white" for="ContactNom">Nom</label>
                 </div>
 
                 <div class="form-outline mb-4 width-responsive">
-                    <input type="text" class="form-control text-white" id="ContactPrenom" />
+                    <input type="text" name="prenom" class="form-control text-white">
                     <label class="form-label text-white" for="ContactPrenom">Prénom</label>
                 </div>
 
                 <div class="form-outline mb-4 width-responsive">
-                    <input type="email" class="form-control text-white" id="ContactEmail" />
+                    <input type="text" name="email" class="form-control text-white">
                     <label class="form-label text-white" for="ContactEmail">E-mail</label>
                 </div>
 
                 <div class="form-group form-outline mb-4 width-responsive">
-                        <textarea class="form-control text-white" id="ContactMessage" rows="5"></textarea>
-                        <label class="form-label text-white" for="ContactMessage">Message</label>
-                    </div>
+                    <textarea  name="message" class="form-control text-white" rows="5"></textarea>
+                    <label class="form-label text-white" for="ContactMessage">Message</label>
                 </div>
-                
-                <button class="btn btn-success btn-rounded btn-contact" href="contact.html" type="submit">Envoyer</button>
+                <button type="submit" class="btn btn-success btn-rounded btn-contact">Envoyer</button>
             </form>
         </div>
 
     </div>
 
-    
+    <div class="socials-container">
 
+        <div class="row">
 
-        <!--
-    <div class="container text-center">
-        
-        <h1 class="page-title pt-3">
-            Contactez-moi
-        </h1>
-        <p>Laissez moi un message si vous avez besoin d'aide</p>
-
-        
-        <form class="text-center border border-light" action="#!">
-           
-            <div class="row">
-                <div class="col-lg-6">
-                    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nom">
-                </div>
-                <div class="col-lg-6">
-                    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Prénom">
-                </div>
+            <div class="col-lg-6">
+                <h3 class="title-presentation">Suivez moi dans les reseaux sociaux</h3>
+                <p class="px-5"><i class="fab fa-lg fa-instagram"></i> Instagram : lydie_calvarin <a href="https://instagram.com">aller voir <i class="fas fa-up-right-from-square"></i></a></p>
+                <p class="px-5"><i class="fab fa-lg fa-facebook-f"></i> Facebook : Lydie Calvarin <a href="https://facebook.com">aller voir <i class="fas fa-up-right-from-square"></i></a></p>
+                <p class="px-5 pb-3"><i class="fab fa-lg fa-linkedin"></i> LinkedIn : Lydie Calvarin <a href="https://linkedin.com">aller voir <i class="fas fa-up-right-from-square"></i></a></p>
+                
             </div>
-          
-            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-
-           
-            <div class="form-group">
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+            <div class="col-lg-6">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.1781748624835!2d2.50017101515226!3d48.83574001025612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60d9e4e59f70b%3A0x3b0253cab06e663e!2s6%20Vla%20du%20Trocad%C3%A9ro%2C%2094170%20Le%20Perreux-sur-Marne%2C%20France!5e0!3m2!1sfr!2sdz!4v1680004349020!5m2!1sfr!2sdz" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-         
-            <div class="custom-control custom-checkbox mb-4">
-                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                <label class="custom-control-label" for="defaultContactFormCopy">M'envoyer une copie du message</label>
-            </div>
-
-          
-            <button class="btn btn-info btn-block" type="submit">Envoyer</button>
-
-        </form>
-
-        
+        </div>
+       
     </div>
-        -->
-        
+    
+    <script 
+        type="text/javascript"
+        src="assets/js/contact.js"></script>
 
 
     <div id="footer"></div>
